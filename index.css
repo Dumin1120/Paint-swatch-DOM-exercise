@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(85, 125, 205);
+}
+
+#color-sample {
+    width: 150px;
+    height: 50px;
+    background-color: black;
+}
+
+.color-sample {
+    width: 150px;
+    height: 50px;
+    background-color: black;
+}
+
+.color-swatch {
+    display: inline-block;
+    width: 160px;
+    height: 155px;
+}
+
+.delete-button {
+    background: none;
+    border: solid 1px;
+    border-radius: 5px;
+}
+
+.delete-button:hover {
+    color: white;
+    background-color: rgba(221, 54, 28, 0.8);
+}
+
+input {
+    width: 150px;
+}
