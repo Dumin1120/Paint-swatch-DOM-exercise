@@ -27,13 +27,13 @@ document.addEventListener("DOMContentLoaded", () => {
         btnDelete.className = "delete-button"
         btnDelete.addEventListener("click", () => btnDelete.parentNode.remove())
         newInpColor.addEventListener("change", () => div2.style.backgroundColor = newInpColor.value)
-        newInpName.addEventListener("change", () => div3.textContent = newInpName.value ? newInpName.value : "black")
+        newInpName.addEventListener("change", () => div3.textContent = newInpName.value.trim() ? newInpName.value : "black")
         div.append(newInpColor, nextLine, newInpName, nextLine2, nextLine3, div2, div3, btnDelete) //can't pass same argument, wil be replaced
         document.body.appendChild(div)
     })
     inColor.addEventListener("change", () => outColor.style.backgroundColor = inColor.value)
     inName.addEventListener("change", (e) => {
         e.preventDefault() //doesn't work as I want
-        outName.textContent = inName.value ? inName.value : "black"
+        outName.textContent = inName.value.trim() ? inName.value : "black"
     })
 })
